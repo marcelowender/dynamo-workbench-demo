@@ -1,0 +1,27 @@
+{
+  "ModelName": "viagens-model",
+  "ModelMetadata": {
+    "Author": "marcelo",
+    "DateCreated": "Dec 13, 2019, 1:10 AM",
+    "DateLastModified": "Dec 13, 2019, 1:10 AM",
+    "Description": ""
+  },
+  "DataModel": [
+    {
+      "TableName": "viagens",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "operation",
+          "AttributeType": "S"
+        },
+        "SortKey": {
+          "AttributeName": "cpf",
+          "AttributeType": "S"
+        }
+      },
+      "DataAccess": {
+        "MySql": {}
+      }
+    }
+  ]
+}
